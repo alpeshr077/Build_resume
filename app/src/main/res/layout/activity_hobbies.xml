@@ -1,49 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Hobbies">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
-      android:layout_marginTop="10dp"
-      android:text="Hobbies"
-      android:textAllCaps="false"
-      android:textSize="22dp"
-      android:textStyle="bold"
-      android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="My Hobbies :"
-      android:textSize="20dp"
-      android:layout_marginTop="20dp"
-      android:layout_marginLeft="10dp"
-      android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Hobbies"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_layout"
+            android:padding="10dp"/>
 
-  <EditText
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="10dp"
-      android:textSize="17dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Reading"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
 
-  <Button
-      android:id="@+id/btnNext4"
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"
-      android:text="Next"
-      android:textSize="22dp"
-      android:textStyle="bold"
-      android:textAllCaps="false"
-      android:layout_gravity="center"
-      android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Writing"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
 
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Photography"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Music"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Blog"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Video Game"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Travel"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:text="Singing"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/detail_design_value"/>
+
+        <Button
+            android:id="@+id/btnNext4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

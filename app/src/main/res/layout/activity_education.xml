@@ -16,52 +16,48 @@
         android:textAllCaps="false"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="School Name :"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:background="@drawable/detail_design_layout"
+        android:padding="10dp"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/edtSchool"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:textSize="17dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Board Examination :"
-        android:textSize="20dp"
+        android:textSize="17dp"
+        android:hint="School Name"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"/>
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/detail_design_value"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/edtBoard"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:textSize="17dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Qualification :"
-        android:textSize="20dp"
+        android:textSize="17dp"
+        android:hint="Board Examination"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"/>
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/detail_design_value"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/edtQual"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:textSize="17dp"/>
+        android:textSize="17dp"
+        android:hint="Qualification"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/detail_design_value"/>
 
     <Button
         android:id="@+id/btnNext3"
@@ -73,6 +69,5 @@
         android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
-
 
 </LinearLayout>
