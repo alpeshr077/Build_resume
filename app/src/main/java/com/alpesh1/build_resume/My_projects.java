@@ -3,6 +3,7 @@ package com.alpesh1.build_resume;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,14 @@ public class My_projects extends AppCompatActivity {
 
                 String project = edtProject.getText().toString();
 
+                if (project.isEmpty()){
+                    edtProject.setError("please enter projects");
+                }else {
+
+                    Intent intent = new Intent(My_projects.this, Template_design_2.class);
+                    startActivities(new Intent[]{intent});
+
+                }
             }
         });
     }

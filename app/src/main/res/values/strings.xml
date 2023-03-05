@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Build_resume</string>
+
+    <string name="data"> <u> Resume </u></string>
+    <string name="pd"> <u> Personal Detail</u></string>
+    <string name="wh"> <u> Work History</u></string>
+    <string name="ed"> <u> Education Detail</u></string>
+    <string name="ho"> <u> Hobbies</u></string>
+    <string name="sk"> <u> Skills</u></string>
+    <string name="pr"> <u> Projects</u></string>
+
+
 </resources>

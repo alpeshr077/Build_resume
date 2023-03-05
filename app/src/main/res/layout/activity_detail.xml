@@ -9,15 +9,17 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/detail_design_layout"
         android:padding="10dp"
+        android:layout_margin="10dp"
         android:text="Personal Detail"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColor="@color/white"
         android:textSize="22dp"
         android:textStyle="bold" />
 
@@ -25,10 +27,10 @@
         android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:textSize="17dp"
         android:hint="Enter Name"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_margin="10dp"
         android:paddingLeft="10dp"
         android:padding="10dp"

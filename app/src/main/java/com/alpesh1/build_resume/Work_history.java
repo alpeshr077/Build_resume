@@ -12,7 +12,8 @@ import android.widget.EditText;
 public class Work_history extends AppCompatActivity {
 
     Button btnNext2;
-    EditText edtDesign,edtCompany,edtExpe;
+
+    EditText edtDesign, edtCompany, edtExpe;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -25,13 +26,19 @@ public class Work_history extends AppCompatActivity {
         edtCompany = findViewById(R.id.edtCompany);
         edtExpe = findViewById(R.id.edtExpe);
 
+
         btnNext2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String design = edtDesign.getText().toString();
-                String company = edtCompany.getText().toString();
-                String expe = edtExpe.getText().toString();
+                String design = edtDesign.getText().toString().trim();
+                String company = edtCompany.getText().toString().trim();
+                String expe = edtExpe.getText().toString().trim();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("design", design);
+                bundle.putString("company", company);
+                bundle.putString("expe", expe);
 
                 if (design.isEmpty()) {
                     edtDesign.setError("Please enter designation");
@@ -42,7 +49,8 @@ public class Work_history extends AppCompatActivity {
                 } else {
 
                     Intent intent = new Intent(Work_history.this, Education.class);
-                    startActivities(new Intent[]{intent});
+                    intent.putExtras(bundle);
+                    startActivity(intent);
                 }
             }
         });
