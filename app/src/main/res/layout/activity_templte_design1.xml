@@ -70,7 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.1"
                         android:paddingLeft="20dp"
                         android:text="Date of Birth"
                         android:textColor="@color/white"
@@ -81,7 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.1"
                         android:paddingLeft="20dp"
                         android:text="Contact Number"
                         android:textColor="@color/white"
@@ -231,6 +231,7 @@
                         android:background="@drawable/resume_back_color_2"/>
 
                     <TextView
+                        android:id="@+id/MyHobby"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"

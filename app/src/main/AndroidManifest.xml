@@ -22,28 +22,22 @@
             android:exported="false" />
         <activity
             android:name=".My_projects"
-            android:exported="false"
-            android:parentActivityName=".Skills" />
+            android:exported="false"/>
         <activity
             android:name=".Skills"
-            android:exported="false"
-            android:parentActivityName=".Hobbies" />
+            android:exported="false"/>
         <activity
             android:name=".Hobbies"
-            android:exported="false"
-            android:parentActivityName=".Education" />
+            android:exported="false"/>
         <activity
             android:name=".Education"
-            android:exported="false"
-            android:parentActivityName=".Work_history" />
+            android:exported="false"/>
         <activity
             android:name=".Work_history"
-            android:exported="false"
-            android:parentActivityName=".Detail_Activity" />
+            android:exported="false"/>
         <activity
             android:name=".Detail_Activity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

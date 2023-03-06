@@ -28,6 +28,7 @@
             android:padding="10dp"/>
 
         <CheckBox
+            android:id="@+id/Reading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -38,6 +39,7 @@
             android:background="@drawable/detail_design_value"/>
 
         <CheckBox
+            android:id="@+id/Writing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -48,6 +50,7 @@
             android:background="@drawable/detail_design_value"/>
 
         <CheckBox
+            android:id="@+id/Photography"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -58,6 +61,7 @@
             android:background="@drawable/detail_design_value"/>
 
         <CheckBox
+            android:id="@+id/Music"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -68,6 +72,7 @@
             android:background="@drawable/detail_design_value"/>
 
         <CheckBox
+            android:id="@+id/Blog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -78,6 +83,7 @@
             android:background="@drawable/detail_design_value"/>
 
         <CheckBox
+            android:id="@+id/Video"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -87,6 +93,7 @@
             android:textStyle="bold"
             android:background="@drawable/detail_design_value"/>
         <CheckBox
+            android:id="@+id/Travel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -96,6 +103,7 @@
             android:textStyle="bold"
             android:background="@drawable/detail_design_value"/>
         <CheckBox
+            android:id="@+id/Singing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

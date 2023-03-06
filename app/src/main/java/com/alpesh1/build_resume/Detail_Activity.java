@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,11 +15,18 @@ public class Detail_Activity extends AppCompatActivity {
     Button btnNext;
     EditText edtName, edtNumber, edtEmail, edtDate;
 
+    SharedPreferences preferences;
+
+    SharedPreferences.Editor editor;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        preferences = getSharedPreferences("EData",0);
+        editor = preferences.edit();
 
         btnNext = findViewById(R.id.btnNext);
         edtName = findViewById(R.id.edtName);
@@ -30,16 +38,16 @@ public class Detail_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String name = edtName.getText().toString().trim();
-                String number = edtNumber.getText().toString().trim();
-                String email = edtEmail.getText().toString().trim();
-                String date = edtDate.getText().toString().trim();
+                String name = edtName.getText().toString();
+                String number = edtNumber.getText().toString();
+                String email = edtEmail.getText().toString();
+                String date = edtDate.getText().toString();
 
-                Bundle bundle = new Bundle();
-                bundle.putString("name", name);
-                bundle.putString("number", number);
-                bundle.putString("email", email);
-                bundle.putString("date", date);
+                editor.putString("name",name);
+                editor.putString("number",number);
+                editor.putString("email",email);
+                editor.putString("date",date);
+                editor.commit();
 
 
                 if (name.isEmpty()) {
@@ -53,8 +61,11 @@ public class Detail_Activity extends AppCompatActivity {
                     edtDate.setError("Please enter date");
                 } else {
 
-                    Intent intent = new Intent(Detail_Activity.this, Murge_Template.class);
-                    intent.putExtras(bundle);
+                    Intent intent = new Intent(Detail_Activity.this, Work_history.class);
+                    intent.putExtra("name",name);
+                    intent.putExtra("number",number);
+                    intent.putExtra("email",email);
+                    intent.putExtra("date",date);
                     startActivity(intent);
 
                 }

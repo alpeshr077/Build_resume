@@ -27,6 +27,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -37,6 +38,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtDesign"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -47,6 +49,7 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/txtDate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -56,6 +59,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/txtNumber"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -65,6 +69,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/txtEmail"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -102,6 +107,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtCompany"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
@@ -111,6 +117,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/txtExpe"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
@@ -147,6 +154,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtSchool"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -156,6 +164,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/txtBoard"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -165,6 +174,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/txtQual"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -216,6 +226,7 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/MyHobby"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
@@ -253,6 +264,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtSkill"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
@@ -290,6 +302,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtProject"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -303,6 +316,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
