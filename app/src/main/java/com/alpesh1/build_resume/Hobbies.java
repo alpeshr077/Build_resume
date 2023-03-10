@@ -34,32 +34,39 @@ public class Hobbies extends AppCompatActivity {
         preferences = getSharedPreferences("EData", 0);
         editor = preferences.edit();
 
-        Binding();
-
+        btnNext4 = findViewById(R.id.btnNext4);
+        Reading = findViewById(R.id.Reading);
+        Writing = findViewById(R.id.Writing);
+        Photography = findViewById(R.id.Photography);
+        Music = findViewById(R.id.Music);
+        Blog = findViewById(R.id.Blog);
+        Video = findViewById(R.id.Video);
+        Travel = findViewById(R.id.Travel);
+        Singing = findViewById(R.id.Singing);
+        MyHobby = findViewById(R.id.MyHobby);
 
         btnNext4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String reading = Reading.getText().toString();
-                String writing = Writing.getText().toString();
-                String photography = Photography.getText().toString();
-                String music = Music.getText().toString();
-                String blog = Blog.getText().toString();
-                String video = Video.getText().toString();
-                String travel = Travel.getText().toString();
-                String singing = Singing.getText().toString();
-
-                editor.putString("reading", reading);
-                editor.putString("writing", writing);
-                editor.putString("photography", photography);
-                editor.putString("music", music);
-                editor.putString("blog", blog);
-                editor.putString("video", video);
-                editor.putString("travel", travel);
-                editor.putString("singing", singing);
-                editor.commit();
-
+//                String reading = Reading.getText().toString();
+//                String writing = Writing.getText().toString();
+//                String photography = Photography.getText().toString();
+//                String music = Music.getText().toString();
+//                String blog = Blog.getText().toString();
+//                String video = Video.getText().toString();
+//                String travel = Travel.getText().toString();
+//                String singing = Singing.getText().toString();
+//
+//                editor.putString("reading", reading);
+//                editor.putString("writing", writing);
+//                editor.putString("photography", photography);
+//                editor.putString("music", music);
+//                editor.putString("blog", blog);
+//                editor.putString("video", video);
+//                editor.putString("travel", travel);
+//                editor.putString("singing", singing);
+//                editor.commit();
 
                 String s = "";
                 if (Reading.isChecked()) {
@@ -85,37 +92,18 @@ public class Hobbies extends AppCompatActivity {
                 }
                 if (Singing.isChecked()) {
                     s += "Singing\n";
-                } else {
-
-                    Intent intent = new Intent(Hobbies.this, Skills.class);
-                    intent.putExtra("reading",reading);
-                    intent.putExtra("writing",writing);
-                    intent.putExtra("photography",photography);
-                    intent.putExtra("music",music);
-                    intent.putExtra("blog",blog);
-                    intent.putExtra("video",video);
-                    intent.putExtra("travel",travel);
-                    intent.putExtra("singing",singing);
-                    startActivity(intent);
-
-
-
                 }
-                MyHobby.setText("Hobyy \n"+s);
+                Intent intent = new Intent(Hobbies.this, Skills.class);
+//                intent.putExtra("reading", reading);
+//                intent.putExtra("writing", writing);
+//                intent.putExtra("photography", photography);
+//                intent.putExtra("music", music);
+//                intent.putExtra("blog", blog);
+//                intent.putExtra("video", video);
+//                intent.putExtra("travel", travel);
+//                intent.putExtra("singing", singing);
+                startActivity(intent);
             }
         });
-    }
-
-    private void Binding() {
-        btnNext4 = findViewById(R.id.btnNext4);
-        Reading = findViewById(R.id.Reading);
-        Writing = findViewById(R.id.Writing);
-        Photography = findViewById(R.id.Photography);
-        Music = findViewById(R.id.Music);
-        Blog = findViewById(R.id.Blog);
-        Video = findViewById(R.id.Video);
-        Travel = findViewById(R.id.Travel);
-        Singing = findViewById(R.id.Singing);
-        MyHobby = findViewById(R.id.MyHobby);
     }
 }

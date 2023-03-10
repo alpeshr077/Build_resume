@@ -73,7 +73,7 @@ public class Template_design_2 extends AppCompatActivity {
         String school = preferences.getString("school","");
         String board = preferences.getString("board","");
         String qual = preferences.getString("qual","");
-
+//
 //        String reading = preferences.getString("reading","");
 //        String writing = preferences.getString("writing","");
 //        String photography = preferences.getString("photography","");

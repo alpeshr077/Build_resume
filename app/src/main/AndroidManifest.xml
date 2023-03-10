@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Build_resume"
         tools:targetApi="31">
         <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Murge_Template"
             android:exported="false" />
         <activity
@@ -22,30 +31,25 @@
             android:exported="false" />
         <activity
             android:name=".My_projects"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Skills"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Hobbies"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Education"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Work_history"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Detail_Activity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

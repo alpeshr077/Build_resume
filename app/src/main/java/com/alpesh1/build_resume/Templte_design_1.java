@@ -2,6 +2,7 @@ package com.alpesh1.build_resume;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.CheckBox;
@@ -18,8 +19,8 @@ public class Templte_design_1 extends AppCompatActivity {
     CheckBox Reading,Writing,Photography,Music,Blog,Video,Travel,Singing;
 
     SharedPreferences preferences;
-
-
+    
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
